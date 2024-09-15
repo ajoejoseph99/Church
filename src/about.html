@@ -11,84 +11,205 @@
 <body class="bg-white" style="font-family:'Playfair Display', serif;">
 
   <!-- header -->
-  <header class="w-full h-auto bg-white fixed top-0 left-0 right-0 z-50">
+  <header class="w-full h-auto bg-white fixed top-0 left-0 right-0 z-50 bg-opacity-90">
     <nav class="container mx-auto p-1 flex justify-between items-center w-full">
       <img src="../assets/SHCCLogoBlack.png" class="h-16 md:h-20" alt="Church logo">
-      <ul>
-        <div class="flex space-x-8 text-xl">
-          <li><a href="./home.html"
-              class="text-black hover:text-red-700 py-2 relative hover:after:content-[''] hover:after:absolute hover:after:left-0 hover:after:bottom-0 hover:after:h-1 hover:after:w-full hover:after:bg-red-700">Home</a>
-          </li>
-
-          <li class="group relative"><a href="./about.html"
-              class="text-black hover:text-red-700 py-2 relative hover:after:content-[''] hover:after:absolute hover:after:left-0 hover:after:bottom-0 hover:after:h-1 hover:after:w-full hover:after:bg-red-700">About
-              Us</a>
-            <ul
-              class="absolute hidden group-hover:block bg-white border border-gray-300 rounded-md shadow-lg whitespace-nowrap">
-              <li><a href="./about.html#history" class="block px-4 py-2 hover:bg-red-700 hover:text-white">History</a>
-              </li>
-              <li><a href="./about.html#staff" class="block px-4 py-2 hover:bg-red-700 hover:text-white">Staff</a></li>
-              <li><a href="./about.html#mass_schedule" class="block px-4 py-2 hover:bg-red-700 hover:text-white">Mass
-                  Schedule</a></li>
-              <li><a href="./about.html#pastors_message"
-                  class="block px-4 py-2 hover:bg-red-700 hover:text-white">Pastors Message</a></li>
-            </ul>
-          </li>
-
-          <li class="group relative"><a href="./faith_formation.html"
-              class="text-black hover:text-red-700 py-2 relative hover:after:content-[''] hover:after:absolute hover:after:left-0 hover:after:bottom-0 hover:after:h-1 hover:after:w-full hover:after:bg-red-700">Faith
-              Formation</a>
-            <ul
-              class="absolute hidden group-hover:block bg-white border border-gray-300 rounded-md shadow-lg whitespace-nowrap">
-              <li><a href="./faith_formation.html#RCIA" class="block px-4 py-2 hover:bg-red-700 hover:text-white">Rite
-                  Of Christian Initiation - RCIA</a></li>
-              <li><a href="./faith_formation.html#religious_education"
-                  class="block px-4 py-2 hover:bg-red-700 hover:text-white">Religious Education</a></li>
-              <li><a href="./faith_formation.html#adult_faith_formation"
-                  class="block px-4 py-2 hover:bg-red-700 hover:text-white">Adult Faith Formation</a></li>
-            </ul>
-          </li>
-
-          <li class="group relative"><a href="./ministries.html"
-              class="text-black hover:text-red-700 py-2 relative hover:after:content-[''] hover:after:absolute hover:after:left-0 hover:after:bottom-0 hover:after:h-1 hover:after:w-full hover:after:bg-red-700">Ministries</a>
-            <ul
-              class="absolute hidden group-hover:block bg-white border border-gray-300 rounded-md shadow-lg whitespace-nowrap">
-              <li><a href="./ministries.html#liturgical_ministries"
-                  class="block px-4 py-2 hover:bg-red-700 hover:text-white">Liturgical Ministries</a></li>
-              <li><a href="./ministries.html#parish_ministries"
-                  class="block px-4 py-2 hover:bg-red-700 hover:text-white">Parish Ministries</a></li>
-            </ul>
-          </li>
-
-          <li><a href="./youth_ministry.html"
-              class="text-black hover:text-red-700 py-2 relative hover:after:content-[''] hover:after:absolute hover:after:left-0 hover:after:bottom-0 hover:after:h-1 hover:after:w-full hover:after:bg-red-700">Youth
-              Ministry</a></li>
-
-          <li class="group relative"> <a href="./contact.html"
-              class="text-black hover:text-red-700 py-2 relative hover:after:content-[''] hover:after:absolute hover:after:left-0 hover:after:bottom-0 hover:after:h-1 hover:after:w-full hover:after:bg-red-700">Contact</a>
-            <ul
-              class="absolute hidden group-hover:block bg-white border border-gray-300 rounded-md shadow-lg whitespace-nowrap">
-              <li><a href="./contact.html#contact_us" class="block px-4 py-2 hover:bg-red-700 hover:text-white">Contact
-                  Us</a></li>
-              <li><a href="./contact.html#register_as_parishioner"
-                  class="block px-4 py-2 hover:bg-red-700 hover:text-white">Register as a Parishioner</a></li>
-            </ul>
-          </li>
-
-          <li><a href="https://shcsjax.com/"
-              class="text-black hover:text-red-700 py-2 relative hover:after:content-[''] hover:after:absolute hover:after:left-0 hover:after:bottom-0 hover:after:h-1 hover:after:w-full hover:after:bg-red-700">Sacred
-              Heart School</a></li>
-
-        </div>
+      <div class="md:hidden">
+        <button id="hamburger-button" class="text-black hover:text-shRed">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+      <ul id="nav-links" class="hidden md:flex space-x-8 text-xl">
+        <li><a href="./home.html"
+            class="text-black hover:text-shRed py-2 relative hover:after:content-[''] hover:after:absolute hover:after:left-0 hover:after:bottom-0 hover:after:h-1 hover:after:w-full hover:after:bg-shRed">Home</a>
+        </li>
+        <li class="group relative"><a href="./about.html"
+            class="text-black hover:text-shRed py-2 relative hover:after:content-[''] hover:after:absolute hover:after:left-0 hover:after:bottom-0 hover:after:h-1 hover:after:w-full hover:after:bg-shRed">About
+            Us</a>
+          <ul
+            class="absolute hidden group-hover:block bg-white border border-gray-300 rounded-md shadow-lg whitespace-nowrap">
+            <li><a href="./about.html#history" class="block px-4 py-2 hover:bg-shRed hover:text-white">History</a></li>
+            <li><a href="./about.html#staff" class="block px-4 py-2 hover:bg-shRed hover:text-white">Staff</a></li>
+            <li><a href="./about.html#mass_schedule" class="block px-4 py-2 hover:bg-shRed hover:text-white">Mass
+                Schedule</a></li>
+            <li><a href="./about.html#pastors_message" class="block px-4 py-2 hover:bg-shRed hover:text-white">Pastors
+                Message</a></li>
+          </ul>
+        </li>
+        <li class="group relative"><a href="./faith_formation.html"
+            class="text-black hover:text-shRed py-2 relative hover:after:content-[''] hover:after:absolute hover:after:left-0 hover:after:bottom-0 hover:after:h-1 hover:after:w-full hover:after:bg-shRed">Faith
+            Formation</a>
+          <ul
+            class="absolute hidden group-hover:block bg-white border border-gray-300 rounded-md shadow-lg whitespace-nowrap">
+            <li><a href="./faith_formation.html#RCIA" class="block px-4 py-2 hover:bg-shRed hover:text-white">Rite Of
+                Christian Initiation -
+                RCIA</a></li>
+            <li><a href="./faith_formation.html#religious_education"
+                class="block px-4 py-2 hover:bg-shRed hover:text-white">Religious Education</a></li>
+            <li><a href="./faith_formation.html#adult_faith_formation"
+                class="block px-4 py-2 hover:bg-shRed hover:text-white">Adult Faith Formation</a></li>
+          </ul>
+        </li>
+        <li class="group relative"><a href="./ministries.html"
+            class="text-black hover:text-shRed py-2 relative hover:after:content-[''] hover:after:absolute hover:after:left-0 hover:after:bottom-0 hover:after:h-1 hover:after:w-full hover:after:bg-shRed">Ministries</a>
+          <ul
+            class="absolute hidden group-hover:block bg-white border border-gray-300 rounded-md shadow-lg whitespace-nowrap">
+            <li><a href="./ministries.html#liturgical_ministries"
+                class="block px-4 py-2 hover:bg-shRed hover:text-white">Liturgical Ministries</a></li>
+            <li><a href="./ministries.html#parish_ministries"
+                class="block px-4 py-2 hover:bg-shRed hover:text-white">Parish Ministries</a></li>
+          </ul>
+        </li>
+        <li><a href="./youth_ministry.html"
+            class="text-black hover:text-shRed py-2 relative hover:after:content-[''] hover:after:absolute hover:after:left-0 hover:after:bottom-0 hover:after:h-1 hover:after:w-full hover:after:bg-shRed">Youth
+            Ministry</a></li>
+        <li class="group relative"> <a href="./contact.html"
+            class="text-black hover:text-shRed py-2 relative hover:after:content-[''] hover:after:absolute hover:after:left-0 hover:after:bottom-0 hover:after:h-1 hover:after:w-full hover:after:bg-shRed">Contact</a>
+          <ul
+            class="absolute hidden group-hover:block bg-white border border-gray-300 rounded-md shadow-lg whitespace-nowrap">
+            <li><a href="./contact.html#contact_us" class="block px-4 py-2 hover:bg-shRed hover:text-white">Contact
+                Us</a></li>
+            <li><a href="./contact.html#register_as_parishioner"
+                class="block px-4 py-2 hover:bg-shRed hover:text-white">Register as a Parishioner</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="https://shcsjax.com/"
+            class="text-black hover:text-shRed py-2 relative hover:after:content-[''] hover:after:absolute hover:after:left-0 hover:after:bottom-0 hover:after:h-1 hover:after:w-full hover:after:bg-shRed">Sacred
+            Heart School</a></li>
       </ul>
     </nav>
   </header>
   <!-- header -->
+
+  <!-- Full-screen side menu -->
+  <div id="side-menu"
+    class="fixed top-0 right-0 h-screen w-64 bg-white shadow-lg transform translate-x-full md:hidden transition duration-300 ease-in-out">
+    <ul class="py-16 space-y-4">
+      <li><a href="./home.html" class="block px-4 py-2 text-black hover:text-shRed">Home</a></li>
+      <li><a href="./about.html" class="block px-4 py-2 text-black hover:text-shRed">About Us</a></li>
+      <li><a href="./faith_formation.html" class="block px-4 py-2 text-black hover:text-shRed">Faith Formation</a>
+      </li>
+      <li><a href="./ministries.html" class="block px-4 py-2 text-black hover:text-shRed">Ministries</a></li>
+      <li><a href="./youth_ministry.html" class="block px-4 py-2 text-black hover:text-shRed">Youth Ministry</a>
+      </li>
+      <li><a href="./contact.html" class="block px-4 py-2 text-black hover:text-shRed">Contact</a></li>
+      <li><a href="https://shcsjax.com/" class="block px-4 py-2 text-black hover:text-shRed">Sacred Heart
+          School</a></li>
+    </ul>
+  </div>
+
+  <script>
+    const hamburgerButton = document.getElementById('hamburger-button');
+    const sideMenu = document.getElementById('side-menu');
+
+    hamburgerButton.addEventListener('click', () => {
+      sideMenu.classList.toggle('translate-x-full');
+    });
+  </script>
+  <!-- Full-screen side menu -->
+
+
   <main class="pt-24">
+    <section id="history">
+      <div class="text-justify text-black text-lg p-6 relative">
+        <h1 class="text-2xl text-shRed font-bold pb-4">
+          Our Parish History
+        </h1>
+        <p class="pb-4">
+          Sacred Heart Parish was formally established by Archbishop Joseph Hurley on June 26, 1959. Msgr. Leo Danaher
+          was the founding pastor. Msgr. Patrick Madden became the new pastor of Sacred Heart in 1970. He ministered to
+          the parish until his retirement in June of 2001.
+        </p>
+        <p class="pb-4">
+          Much of the building and development of the parish happened during this period. Rev. Anthony Sebra was
+          appointed pastor in June of 2001. Rev. Victor Narivelil, CMI was appointed pastor in February 2007. He served
+          as pastor until his retirement in August of 2014. Rev. James Kaniparampil, CMI. was appointed Pastor of Sacred
+          Heart in August 2014 and continues to lead our parish today. The parish built a rectory in 1953 and in 1983 a
+          second floor was added with an extensive remodel of the entire building in 2002.
+        </p>
+        <p class="pb-4">
+          The first building to be erected on Sacred Heart’s property was the original church, dedicated in May of 1960.
+          It was remodeled after the present church was dedicated in September 1998 and is currently our Family Life
+          Center. Our present church sanctuary was dedicated in 1998.
+        </p>
+        <p class="pb-4">
+          Our school began in 1960 with portable buildings situated where the current gymnasium now stands. The parish
+          built a convent in 1962 to house the Sisters of Mercy from Clonakilty, Ireland. The Sisters of Mercy educated
+          our children and provided spiritual guidance for our parish for more than 50 years.
+        </p>
+        <p class="pb-4">
+          The gymnasium was dedicated in 1998; the Pre-K (4-year-old) building was dedicated in 2005; and the Parish
+          Center was dedicated in November 2012.
+        </p>
+        <p class="pb-4">
+          In 2017, the convent was renovated to house the Mercedarian Sisters of the Blessed Sacrament who arrived at
+          Sacred Heart in October 2017.
+        </p>
+      </div>
+    </section>
+    
+    <section id="staff">
+      <div class="text-justify text-black text-lg p-6 relative">
+        <h1 class="text-2xl text-shRed font-bold pb-4">
+          Sacred Heart Catholic Church Clergy
+        </h1>
+      </div>
+
+      <div class="text-justify text-black text-lg p-6 relative">
+        <h1 class="text-2xl text-shRed font-bold pb-4">
+          Sacred Heart Catholic Church Staff
+        </h1>
+      </div>
+    </section>
+
+    <section id="service timings" class="relative bg-cover bg-center">
+      <div class="absolute inset-0 bg-no-repeat bg-center bg-cover opacity-20"
+        style="background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url('../assets/holy_communion.jpg'); pointer-events: none;">
+      </div>
+      
+      <div class="container mx-auto grid grid-cols-2 gap-4 relative" style="z-index: 1;">
+        <div>
+          <h1
+            class="text-xl font-bold pb-2 relative after:content-[''] after:block after:h-1 after:bg-yellow-500 after:absolute after:left-0 after:bottom-0 after:w-full after:mt-2">
+            Mass Schedule</h1>
+          <br>
+          <h2 class="text-lg font-bold"> Daily Mass </h2><br>
+          <ul class="text-lg list-disc pl-8 leading-10">
+            <li>Saturday 8:15am, 5:00pm – Vigil, 7:00pm (Spanish) – Spanish Mass</li>
+            <li>Sunday 7:30am, 9:30am, 11:30am, 5:00pm</li>
+            <li>Monday 8:15am</li>
+            <li>Tuesday 8:15am</li>
+            <li>Wednesday 8:15am, 7:00pm</li>
+            <li>Thursday 8:15am, 7:00pm (Spanish)</li>
+            <li>Friday 8:15am, 7:00pm</li>
+          </ul>
+        </div>
+        <div>
+          <h1
+            class="text-xl font-bold pb-2 relative after:content-[''] after:block after:h-1 after:bg-yellow-500 after:absolute after:left-0 after:bottom-0 after:w-full after:mt-2">
+            Church Schedule</h1>
+          <br>
+          <h2 class="text-lg font-bold"> Reconciliation/Confession </h2>
+          <h2 class="text-lg pl-4"> Saturday 8:45am – 10:00am </h2><br>
+          <h2 class="text-lg font-bold"> Eucharistic Adoration </h2>
+          <h2 class="text-lg pl-4"> Adoration of the Blessed Sacrament Friday 9:00AM-7:00PM </h2><br>
+          <h2 class="text-lg font-bold"> Divine Mercy Chaplet </h2>
+          <h2 class="text-lg pl-4"> Friday 3:00PM </h2><br>
+          <h2 class="text-lg"> Daily Mass, Adoration and Divine Mercy Chaplet will continue to be live streamed on
+            Sacred Heart Catholic Church Facebook. </h2><br>
+          <h2 class="text-lg font-bold"> Faith Direct is also available for Online Giving. </h2>
+
+        </div>
+      </div>
+    </section>
 
   </main>
+
   <!-- footer -->
-  <footer class="w-full bg-red-700 relative">
+  <footer class="w-full bg-shRed relative">
     <div class="absolute inset-11 bg-no-repeat bg-center bg-contain opacity-10"
       style="background-image: url('../assets/SHCCLogoWhite.png'); pointer-events: none;"></div>
     <div class="w-full border-t border-gray-300 my-8"></div>
@@ -153,12 +274,14 @@
 
     </div>
     <br>
-    <p class="text-lg items-center text-center text-yellow-500"
+    <p class="text-lg items-center text-center text-white"
       style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; z-index: 1;">
       © Sacred Heart Catholic Church 2024
     </p>
   </footer>
   <!-- footer -->
+
+
 </body>
 
 

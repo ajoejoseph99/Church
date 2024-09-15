@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Church</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+
+<body class="bg-white" style="font-family:'Playfair Display', serif;">
+
+    <!-- header -->
+    <header class="w-full h-auto bg-white fixed top-0 left-0 right-0 z-50 bg-opacity-90">
+        <nav class="container mx-auto p-1 flex justify-between items-center w-full">
+            <img src="../assets/SHCCLogoBlack.png" class="h-16 md:h-20" alt="Church logo">
+            <div class="md:hidden">
+                <button id="hamburger-button" class="text-black hover:text-shRed">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+            <ul id="nav-links" class="hidden md:flex space-x-8 text-xl">
+                <li><a href="./home.html"
+                        class="text-black hover:text-shRed py-2 relative hover:after:content-[''] hover:after:absolute hover:after:left-0 hover:after:bottom-0 hover:after:h-1 hover:after:w-full hover:after:bg-shRed">Home</a>
+                </li>
+                <li class="group relative"><a href="./about.html"
+                        class="text-black hover:text-shRed py-2 relative hover:after:content-[''] hover:after:absolute hover:after:left-0 hover:after:bottom-0 hover:after:h-1 hover:after:w-full hover:after:bg-shRed">About
+                        Us</a>
+                    <ul
+                        class="absolute hidden group-hover:block bg-white border border-gray-300 rounded-md shadow-lg whitespace-nowrap">
+                        <li><a href="./about.html#history"
+                                class="block px-4 py-2 hover:bg-shRed hover:text-white">History</a></li>
+                        <li><a href="./about.html#staff"
+                                class="block px-4 py-2 hover:bg-shRed hover:text-white">Staff</a></li>
+                        <li><a href="./about.html#mass_schedule"
+                                class="block px-4 py-2 hover:bg-shRed hover:text-white">Mass Schedule</a></li>
+                        <li><a href="./about.html#pastors_message"
+                                class="block px-4 py-2 hover:bg-shRed hover:text-white">Pastors Message</a></li>
+                    </ul>
+                </li>
+                <li class="group relative"><a href="./faith_formation.html"
+                        class="text-black hover:text-shRed py-2 relative hover:after:content-[''] hover:after:absolute hover:after:left-0 hover:after:bottom-0 hover:after:h-1 hover:after:w-full hover:after:bg-shRed">Faith
+                        Formation</a>
+                    <ul
+                        class="absolute hidden group-hover:block bg-white border border-gray-300 rounded-md shadow-lg whitespace-nowrap">
+                        <li><a href="./faith_formation.html#RCIA"
+                                class="block px-4 py-2 hover:bg-shRed hover:text-white">Rite Of Christian Initiation -
+                                RCIA</a></li>
+                        <li><a href="./faith_formation.html#religious_education"
+                                class="block px-4 py-2 hover:bg-shRed hover:text-white">Religious Education</a></li>
+                        <li><a href="./faith_formation.html#adult_faith_formation"
+                                class="block px-4 py-2 hover:bg-shRed hover:text-white">Adult Faith Formation</a></li>
+                    </ul>
+                </li>
+                <li class="group relative"><a href="./ministries.html"
+                        class="text-black hover:text-shRed py-2 relative hover:after:content-[''] hover:after:absolute hover:after:left-0 hover:after:bottom-0 hover:after:h-1 hover:after:w-full hover:after:bg-shRed">Ministries</a>
+                    <ul
+                        class="absolute hidden group-hover:block bg-white border border-gray-300 rounded-md shadow-lg whitespace-nowrap">
+                        <li><a href="./ministries.html#liturgical_ministries"
+                                class="block px-4 py-2 hover:bg-shRed hover:text-white">Liturgical Ministries</a></li>
+                        <li><a href="./ministries.html#parish_ministries"
+                                class="block px-4 py-2 hover:bg-shRed hover:text-white">Parish Ministries</a></li>
+                    </ul>
+                </li>
+                <li><a href="./youth_ministry.html"
+                        class="text-black hover:text-shRed py-2 relative hover:after:content-[''] hover:after:absolute hover:after:left-0 hover:after:bottom-0 hover:after:h-1 hover:after:w-full hover:after:bg-shRed">Youth
+                        Ministry</a></li>
+                <li class="group relative"> <a href="./contact.html"
+                        class="text-black hover:text-shRed py-2 relative hover:after:content-[''] hover:after:absolute hover:after:left-0 hover:after:bottom-0 hover:after:h-1 hover:after:w-full hover:after:bg-shRed">Contact</a>
+                    <ul
+                        class="absolute hidden group-hover:block bg-white border border-gray-300 rounded-md shadow-lg whitespace-nowrap">
+                        <li><a href="./contact.html#contact_us"
+                                class="block px-4 py-2 hover:bg-shRed hover:text-white">Contact Us</a></li>
+                        <li><a href="./contact.html#register_as_parishioner"
+                                class="block px-4 py-2 hover:bg-shRed hover:text-white">Register as a Parishioner</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="https://shcsjax.com/"
+                        class="text-black hover:text-shRed py-2 relative hover:after:content-[''] hover:after:absolute hover:after:left-0 hover:after:bottom-0 hover:after:h-1 hover:after:w-full hover:after:bg-shRed">Sacred
+                        Heart School</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- header -->
+
+    <!-- Full-screen side menu -->
+    <div id="side-menu"
+        class="fixed top-0 right-0 h-screen w-64 bg-white shadow-lg transform translate-x-full md:hidden transition duration-300 ease-in-out">
+        <ul class="py-16 space-y-4">
+            <li><a href="./home.html" class="block px-4 py-2 text-black hover:text-shRed">Home</a></li>
+            <li><a href="./about.html" class="block px-4 py-2 text-black hover:text-shRed">About Us</a></li>
+            <li><a href="./faith_formation.html" class="block px-4 py-2 text-black hover:text-shRed">Faith Formation</a>
+            </li>
+            <li><a href="./ministries.html" class="block px-4 py-2 text-black hover:text-shRed">Ministries</a></li>
+            <li><a href="./youth_ministry.html" class="block px-4 py-2 text-black hover:text-shRed">Youth Ministry</a>
+            </li>
+            <li><a href="./contact.html" class="block px-4 py-2 text-black hover:text-shRed">Contact</a></li>
+            <li><a href="https://shcsjax.com/" class="block px-4 py-2 text-black hover:text-shRed">Sacred Heart
+                    School</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const hamburgerButton = document.getElementById('hamburger-button');
+        const sideMenu = document.getElementById('side-menu');
+
+        hamburgerButton.addEventListener('click', () => {
+            sideMenu.classList.toggle('translate-x-full');
+        });
+    </script>
+    <!-- Full-screen side menu -->
+
+    <main>
+        <section id="home" class="relative">
+            <img src="../assets/red background main.JPG" class="w-full h-screen object-cover" alt="Church interior">
+            <div class="absolute inset-0 bg-black opacity-60"></div>
+            <div class="absolute bottom-4 left-4">
+                <h1 class="text-3xl font-bold text-white whitespace-nowrap">
+                    Welcome to
+                </h1>
+                <h1 class="text-3xl font-bold text-yellow-500 whitespace-nowrap">
+                    Sacred Heart Catholic Church
+                </h1>
+            </div>
+        </section>
+
+
+        <!-- <div class="p-8 bg-gradient-to-r from-#200122 to-#6f0000 justify-items-center"> -->
+        <div class="p-8 justify-items-center" style="background-image: linear-gradient(to right, #200122, #6f0000);">
+            <h1 class="text-2xl justify-center text-center font-bold italic text-white">
+                But seek first his kingdom and his righteousness, and all these things will be given to you as well.
+            </h1>
+            <h3 class="text-xl justify-center text-center font-bold italic text-yellow-500">
+                Matthew 6:33
+            </h3>
+        </div>
+
+        <div
+            class="container mx-auto relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 p-4 justify-items-center w-full pt-12 flex-wrap">
+
+            <div class="bg-shRed rounded-xl shadow-xl p-6 w-full md:w-80 group hover:bg-white transition duration-300">
+                <svg class="h-24 w-24 object-contain mx-auto mb-4 group-hover:fill-shRed fill-white transition duration-300"
+                    xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px"
+                    viewBox="0 0 24 24" width="24px">
+                    <g>
+                        <rect fill="none" height="24" width="24" />
+                    </g>
+                    <g>
+                        <g>
+                            <path
+                                d="M18,12.22V9l-5-2.5V5h2V3h-2V1h-2v2H9v2h2v1.5L6,9v3.22L2,14v8h8v-3c0-1.1,0.9-2,2-2s2,0.9,2,2v3h8v-8L18,12.22z M12,13.5 c-0.83,0-1.5-0.67-1.5-1.5s0.67-1.5,1.5-1.5s1.5,0.67,1.5,1.5S12.83,13.5,12,13.5z" />
+                        </g>
+                    </g>
+                </svg>
+                <h1
+                    class="text-2xl font-bold text-white text-center mb-2 group-hover:text-shRed transition duration-300">
+                    About our Parish</h1>
+            </div>
+
+            <div
+                class="bg-yellow-500 rounded-xl shadow-xl p-6 w-full md:w-80 group hover:bg-white transition duration-300">
+                <svg class="h-24 w-24 object-contain mx-auto mb-4 group-hover:fill-yellow-500 fill-white transition duration-300"
+                    xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px"
+                    viewBox="0 0 24 24" width="24px">
+                    <g>
+                        <rect fill="none" height="24" width="24" />
+                    </g>
+                    <g>
+                        <path
+                            d="M22,3l-1.67,1.67L18.67,3L17,4.67L15.33,3l-1.66,1.67L12,3l-1.67,1.67L8.67,3L7,4.67L5.33,3L3.67,4.67L2,3v16 c0,1.1,0.9,2,2,2l16,0c1.1,0,2-0.9,2-2V3z M11,19H4v-6h7V19z M20,19h-7v-2h7V19z M20,15h-7v-2h7V15z M20,11H4V8h16V11z" />
+                    </g>
+                </svg>
+                <h1
+                    class="text-2xl font-bold text-white text-center mb-2 group-hover:text-yellow-500 transition duration-300">
+                    Church Bulletin</h1>
+            </div>
+
+            <div class="bg-shRed rounded-xl shadow-xl p-6 w-full md:w-80 group hover:bg-white transition duration-300">
+                <svg class="h-24 w-24 object-contain mx-auto mb-4 group-hover:fill-shRed fill-white transition duration-300"
+                    xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px"
+                    viewBox="0 0 24 24" width="24px">
+                    <g>
+                        <rect fill="none" height="24" width="24" />
+                    </g>
+                    <g>
+                        <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3 1 9l11 6 9-4.91V17h2V9L12 3z" />
+                    </g>
+                </svg>
+                <h1
+                    class="text-2xl font-bold text-white text-center mb-2 group-hover:text-shRed transition duration-300">
+                    Sacred Heart School</h1>
+            </div>
+
+        </div>
+
+        <section id="welcome message" class="relative">
+
+            <div class="absolute inset-0 bg-no-repeat bg-center bg-cover opacity-20"
+                style="background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url('../assets/community_bg.jpeg'); pointer-events: none;">
+            </div>
+
+            <div class="text-justify text-black font-bold text-lg p-6 relative"
+                style="font-family:'Playfair Display', serif;">
+                <p class="text-2xl text-shRed font-bold pb-4">
+                    Dear Sacred Heart Family and Friends,
+                </p>
+                <p class="pb-4">
+                    Welcome! Whether you are a visitor, new to the area, interested in becoming Catholic, seeking to
+                    return to the practice of your faith, or an active member of our parish, I along with the
+                    parishioners and school families of Sacred Heart Catholic Church and School welcome you to our
+                    spiritual home. We are pleased that you have come to our website and we want to do all that we can
+                    to assist you.
+                </p>
+                <p class="pb-4">
+                    Sacred Heart Catholic Church, located on the west-side of Jacksonville, is a family-like community
+                    with rich cultural diversity while remaining one in faith and liturgy. We try to put our love into
+                    actions by works of charity through outreach programs. We provide ample opportunities to grow in
+                    faith through ministries like Religious Education for children, Youth Ministry, and Adult Faith
+                    Formation. We share in the upkeep of the parish by inviting members to participate in stewardship,
+                    pastoral, and social ministries. Our Parish School, staffed by the Mercedarian Sisters of the
+                    Blessed Sacrament and many dynamic teachers, provides excellent human and spiritual formation for
+                    our young people.
+                </p>
+                <p class="pb-4">
+                    If you are new to the area or looking for a church, I want to invite you to come visit and celebrate
+                    the Eucharist with us. The parish staff and I will be glad to be of help to you in any way possible.
+                    If you have any questions, please do not hesitate to call us or email me or any of the staff
+                    personnel. Please refer to our parish bulletin, Facebook page, Instagram account, or myParish App
+                    for upcoming parish events.
+                </p>
+                <p class="pb-4">
+                    “May God bless you and keep you; the Lord make his face shine on you and be gracious to you; the
+                    Lord turn his face toward you and give you peace”
+                </p>
+                <p class="pb-4">
+                    (Numbers 6:24-26).
+                </p>
+                <p class="pb-4">
+                    In Christ & Mary Immaculate,
+                </p>
+                <p class="pb-4">
+                    Fr. James CMI
+                </p>
+            </div>
+        </section>
+
+        <!-- <div class="w-full border-t border-gray-300"></div> -->
+
+        <section id="services" class="pt-2">
+
+            <h1 class="text-5xl text-shRed font-bold text-center pb-4">
+                How We Serve You
+            </h1>
+            <h1 class="text-lg text-yellow-500 font-bold text-center">
+                SERVICES AT OUR PARISH
+            </h1>
+
+            <div
+                class="container mx-auto relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 p-4 justify-items-center w-full">
+                <div>
+                    <div class="group h-80 w-80 [perspective:1000px] p-8">
+                        <div
+                            class="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                            <div class="absolute inset-0 flex items-center justify-center bg-shRed rounded-xl">
+                                <svg class="h-48 w-48 object-contain fill-white" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 450 600">
+                                    <path
+                                        d="M190,35a35,35,0,1,1,70,0,35,35,0,0,1,24.75,59.75A35.43,35.43,0,0,1,260,105v85h85a35,35,0,1,1,70,0,35,35,0,1,1,0,70,35,35,0,1,1-70,0H260V495a35,35,0,1,1,0,70,35,35,0,1,1-70,0,35,35,0,1,1,0-70V260H105a35,35,0,0,1-59.75,24.75A35.43,35.43,0,0,1,35,260a35,35,0,1,1,0-70,35,35,0,0,1,59.75-24.75A35.43,35.43,0,0,1,105,190h85V105a35,35,0,0,1-24.75-59.75A35.43,35.43,0,0,1,190,35Z" />
+                                </svg>
+                            </div>
+                            <div
+                                class="absolute inset-0 h-full w-full rounded-xl bg-black/80 px-12 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden] flex items-center justify-center">
+                                <div>
+                                    <h1 class="text-2xl font-bold text-yellow-500">Facilities</h1>
+                                    <p class="text-lg pt-3">
+                                        Contact Rectory Office for Reservations or Rentals
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="group h-80 w-80 [perspective:1000px] p-8">
+                        <div
+                            class="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                            <div class="absolute inset-0 flex items-center justify-center bg-yellow-500 rounded-xl">
+                                <svg class="h-48 w-48 object-contain fill-white" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 122.88 112.43">
+                                    <path
+                                        d="M10.94,31.01c-0.05-0.25-0.03-0.51,0.05-0.74l3.48-11.06c0.16-0.53,0.6-0.9,1.1-1l18.7-5.39c0.5-0.14,1.01-0.01,1.37,0.31 l0,0l8.52,7.54c0.15,0.11,0.27,0.26,0.37,0.42c0.23,0.39,0.26,0.86,0.1,1.28l-4.76,13.26c6.32-0.29,12.49,1,18.02,3.61 c2.1-2.01,4.44-3.8,6.99-5.31c2.73-1.61,5.72-2.92,8.93-3.84c10.19-2.94,20.61-1.47,29.2,3.28c8.6,4.75,15.39,12.79,18.33,22.99 c2.94,10.19,1.47,20.61-3.28,29.2c-4.75,8.6-12.79,15.39-22.99,18.33c-9.32,2.69-18.82,1.69-26.95-2.13 c-2.11,2.02-4.46,3.81-7.02,5.32c-2.72,1.61-5.7,2.9-8.9,3.83c-10.19,2.94-20.61,1.47-29.2-3.28c-8.6-4.75-15.39-12.79-18.33-22.99 c-2.94-10.19-1.47-20.61,3.28-29.2c3.4-6.16,8.48-11.39,14.84-14.94l-11.31-8.6C11.19,31.68,11,31.35,10.94,31.01L10.94,31.01z M6.69,31.24l-0.16,0.05C6.13,29.94,5.29,28.92,4,28.2c-1.29-0.71-2.61-0.88-3.95-0.49L0,27.55c1.34-0.39,2.37-1.23,3.09-2.52 c0.71-1.3,0.88-2.61,0.49-3.95l0.16-0.05c0.39,1.34,1.23,2.37,2.52,3.09c1.29,0.71,2.61,0.88,3.95,0.49l0.05,0.16 c-1.34,0.39-2.37,1.23-3.09,2.52C6.46,28.58,6.3,29.9,6.69,31.24L6.69,31.24L6.69,31.24z M17.03,12l-0.16,0.05 c-0.39-1.34-1.23-2.37-2.52-3.09c-1.29-0.71-2.61-0.88-3.95-0.49l-0.05-0.16c1.34-0.39,2.37-1.23,3.09-2.52 c0.71-1.3,0.88-2.61,0.49-3.95l0.16-0.05c0.39,1.34,1.23,2.37,2.52,3.09s2.61,0.88,3.95,0.49l0.05,0.16 c-1.34,0.39-2.37,1.23-3.09,2.52C16.8,9.34,16.64,10.66,17.03,12L17.03,12L17.03,12z M40.83,10.22l-0.16,0.05 c-0.39-1.34-1.23-2.37-2.52-3.09c-1.29-0.71-2.61-0.88-3.95-0.49l-0.05-0.16c1.34-0.39,2.37-1.23,3.09-2.52 c0.71-1.3,0.88-2.61,0.49-3.95L37.89,0c0.39,1.34,1.23,2.37,2.52,3.09c1.29,0.71,2.61,0.88,3.95,0.49l0.05,0.16 c-1.34,0.39-2.37,1.23-3.09,2.52C40.61,7.55,40.45,8.87,40.83,10.22L40.83,10.22L40.83,10.22z M60.66,40.68 c2.31,1.32,4.48,2.88,6.48,4.66c1.26-1,2.61-1.91,4.05-2.69c1.74-0.95,3.61-1.72,5.6-2.29c7.36-2.12,14.88-1.06,21.09,2.37 c6.21,3.43,11.12,9.24,13.24,16.6c2.12,7.36,1.06,14.88-2.37,21.09c-3.43,6.21-9.24,11.12-16.6,13.24 c-3.08,0.89-6.19,1.22-9.22,1.05c-3.14-0.17-6.2-0.89-9.05-2.07c-1.79-0.74-3.5-1.67-5.09-2.75c-1.59-1.09-3.06-2.34-4.41-3.74 c-1.52-1.59-2.86-3.37-3.97-5.32c-1.08-1.88-1.95-3.93-2.59-6.14c-0.93-3.24-1.25-6.5-1.03-9.67c0.22-3.05,0.94-6.01,2.11-8.77 c-1.59-1.55-3.38-2.87-5.31-3.94c-0.37-0.21-0.75-0.4-1.14-0.59c-1.77,3.7-2.9,7.71-3.31,11.86c-0.42,4.34-0.05,8.82,1.23,13.26 c2.71,9.41,8.99,16.83,16.94,21.22c7.95,4.39,17.58,5.75,26.99,3.04c9.41-2.71,16.83-8.99,21.22-16.94 c4.39-7.95,5.75-17.58,3.04-26.99c-2.71-9.41-8.99-16.83-16.94-21.22c-7.95-4.39-17.58-5.75-26.99-3.04 c-2.94,0.85-5.7,2.05-8.24,3.55C64.32,37.68,62.4,39.1,60.66,40.68L60.66,40.68z M69.27,47.38c4.2,4.36,7.43,9.78,9.22,16 c1.39,4.82,1.79,9.68,1.33,14.38c-0.44,4.43-1.64,8.71-3.51,12.67c2.16,0.75,4.44,1.21,6.78,1.34c2.72,0.15,5.5-0.14,8.26-0.94 c6.58-1.9,11.76-6.28,14.83-11.84c3.07-5.56,4.02-12.29,2.13-18.88c-1.9-6.58-6.28-11.76-11.84-14.84 c-5.56-3.07-12.29-4.02-18.88-2.13c-1.77,0.51-3.44,1.2-5,2.05C71.41,45.85,70.3,46.58,69.27,47.38L69.27,47.38z M73.6,89.3 c1.76-3.69,2.9-7.69,3.3-11.83c0.43-4.35,0.05-8.85-1.23-13.3c-2.71-9.41-8.99-16.83-16.94-21.22c-7.07-3.9-15.46-5.41-23.84-3.8 c-1.04,0.23-2.05,0.48-3.05,0.77c-1.34,0.39-2.67,0.84-3.96,1.34c-7.58,3.16-13.59,8.75-17.36,15.58 c-4.39,7.95-5.75,17.58-3.04,26.99c2.71,9.41,8.99,16.83,16.94,21.22c7.95,4.39,17.58,5.75,26.99,3.04 c2.93-0.85,5.68-2.05,8.22-3.54c2.08-1.23,4.01-2.65,5.76-4.23c-2.31-1.32-4.48-2.88-6.48-4.66c-1.27,1.02-2.63,1.93-4.07,2.71 c-1.72,0.93-3.58,1.7-5.57,2.27c-7.36,2.12-14.88,1.06-21.09-2.37c-6.21-3.43-11.12-9.24-13.24-16.6l0-0.01 c-2.12-7.36-1.06-14.87,2.37-21.08c3.43-6.21,9.24-11.12,16.6-13.24l0.01,0c7.36-2.12,14.87-1.06,21.08,2.37 c6.21,3.43,11.12,9.24,13.24,16.6l0,0c0.94,3.25,1.25,6.53,1.02,9.7c-0.22,3.03-0.94,5.98-2.11,8.73c1.02,0.99,2.12,1.89,3.29,2.69 C71.45,88.15,72.51,88.77,73.6,89.3L73.6,89.3z M56.78,93.63c-4.2-4.36-7.43-9.78-9.22-16c-1.38-4.8-1.79-9.65-1.34-14.34 c0.43-4.45,1.64-8.74,3.51-12.71c-4.64-1.62-9.81-1.88-14.9-0.45c-0.08,0.03-0.17,0.06-0.26,0.08c-6.52,1.92-11.66,6.28-14.71,11.8 c-3.05,5.52-4.01,12.2-2.16,18.74c0.03,0.08,0.06,0.17,0.08,0.26c1.92,6.52,6.28,11.66,11.8,14.71c5.56,3.07,12.29,4.02,18.88,2.13 c1.74-0.5,3.41-1.19,4.98-2.04C54.63,95.17,55.74,94.44,56.78,93.63L56.78,93.63z M61.09,58.68c-0.75,2.09-1.22,4.29-1.38,6.54 c-0.2,2.85,0.08,5.77,0.91,8.66c0.56,1.94,1.35,3.78,2.33,5.48c0.6,1.05,1.28,2.05,2.01,2.98c0.74-2.08,1.21-4.26,1.37-6.5 c0.21-2.81-0.06-5.7-0.87-8.56c-0.03-0.08-0.06-0.17-0.08-0.26C64.47,63.89,62.99,61.09,61.09,58.68L61.09,58.68z M27.02,38.48 c1.27-0.52,2.58-0.98,3.93-1.37c1.03-0.3,2.05-0.55,3.08-0.75c0.89-0.2,1.78-0.38,2.68-0.53l4.24-11.81l-25.38,7.32l10.11,7.68 C26.11,38.83,26.56,38.65,27.02,38.48L27.02,38.48z M14.59,28.58l25.72-7.42l-6-5.31l-17.27,4.98L14.59,28.58L14.59,28.58z" />
+                                </svg>
+                            </div>
+                            <div
+                                class="absolute inset-0 h-full w-full rounded-xl bg-black/80 px-12 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden] flex items-center justify-center">
+                                <div>
+                                    <h1 class="text-xl font-bold text-yellow-500">Marriages</h1>
+                                    <p class="text-sm pt-3">
+                                        Prior to setting a date, arrangements must be made at least eight months in
+                                        advance with a priest.<br><br>
+                                        Please contact the Rectory for an appointment.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="group h-80 w-80 [perspective:1000px] p-8">
+                        <div
+                            class="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                            <div class="absolute inset-0 flex items-center justify-center bg-shRed rounded-xl">
+                                <svg class="h-48 w-48 object-contain fill-white" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 114.56 122.88">
+                                    <path class="st0"
+                                        d="M102,39.66c0.79,0,1.43,0.64,1.43,1.43c0,0.79-0.64,1.43-1.43,1.43c-0.79,0-1.43-0.64-1.43-1.43 C100.57,40.3,101.21,39.66,102,39.66L102,39.66z M111,48.04c-0.44,0.33-0.84,0.61-1.24,0.9c-2.45,1.75-4.63,3.31-5.29,6.34 c-0.43,1.99,0.45,4.68,1.47,7.78c1.22,3.69,2.61,7.92,2.4,12.69c-0.38,8.72-3.46,15.68-9.04,20.45 c-5.44,4.65-13.21,7.18-23.11,7.19c-2.65,0-5.31-0.12-7.94-0.24c-6.71-0.31-13.29-0.61-18.29,1.19c-3.76,1.36-6.83,3.69-9.54,6.72 c-2.77,3.09-5.17,6.92-7.54,11.18c-0.26,0.46-0.76,0.7-1.26,0.63c-3.78-0.35-6.35-1.62-7.87-3.84c-1.04-1.51-1.54-3.42-1.59-5.74 c-2.71,2.06-5.58,2.42-8.19,1.63c-1.82-0.55-3.49-1.66-4.87-3.15c-1.35-1.45-2.43-3.27-3.1-5.26C4.57,102.24,5,97.17,8.63,93.18 c-3.03-1.76-5.4-3.96-6.89-6.73c-1.74-3.24-2.26-7.21-1.2-12.11c0.15-0.68,0.81-1.11,1.49-0.96c0.31,0.07,0.57,0.24,0.74,0.48 c6,7.5,13.3,10.89,21.58,11.17c7.48,0.26,15.8-1.99,24.71-6.01c-7.64-1.69-14.2-4.65-19.27-9.39c-5.88-5.49-9.71-13.3-10.85-24.19 c-3.11-6.75-4.86-13.44-5.05-20.06c-0.19-6.7,1.24-13.31,4.49-19.81c0.04-0.09,0.1-0.2,0.16-0.33c0.83-1.69,2.49-5.08,4.8-4.99 c0.57,0.02,1.1,0.24,1.58,0.66c0.38,0.33,0.71,0.79,1.02,1.39c0.04,0.07,0.07,0.15,0.09,0.22c0.9,2.77,2.14,5.45,3.78,8.02 c0.3-0.28,0.61-0.57,0.92-0.87c0.63-0.62,1.23-1.27,1.73-1.93c0.64-0.85,1.1-1.7,1.55-2.55c0.63-1.17,1.25-2.34,2.28-3.51 c0.43-0.49,0.91-0.94,1.42-1.25c0.03-0.02,0.05-0.03,0.08-0.05c0.74-0.41,1.52-0.54,2.33-0.17c0.56,0.26,1.05,0.73,1.46,1.42 c0.33,0.54,0.62,1.24,0.87,2.08c5.14,13.41,15.38,18.38,24.06,22.58c4.17,2.02,8,3.87,10.89,6.43c2.02,1.79,3.91,4.05,5.59,6.69 c1.04,1.62,2,3.38,2.86,5.26c0.19-0.68,0.4-1.35,0.64-2.01c1.09-3,2.94-5.88,5.45-7.78c2.19-1.65,4.87-2.55,7.96-2.14 c0.85,0.11,1.69,0.33,2.51,0.65c0.8,0.31,1.58,0.72,2.32,1.24c0.34,0.23,0.68,0.49,1.01,0.78c0.31,0.27,0.63,0.57,0.94,0.91 c0.46,0.49,0.9,1.03,1.3,1.62c0.36,0.53,0.71,1.09,1.04,1.7l1.73,1.5l1.08,0.93l0.36,0.29c1.81,1.47,2.52,2.04,2.31,3.07 c-0.16,0.82-0.67,1.05-1.5,1.43C112.53,47.1,111.82,47.43,111,48.04L111,48.04z M31.27,12.63c0.4,0.53,0.82,1.06,1.26,1.58 c1.28,1.5,2.69,2.87,4.2,4.16c2.31,1.97,4.86,3.74,7.51,5.45c1.23,0.79,2.47,1.52,3.73,2.19c2.68,1.4,5.35,2.6,7.99,3.79 c1.39,0.62,2.77,1.24,4.15,1.89c2.35,1.08,4.66,2.21,6.88,3.5c2.74,1.6,5.28,3.51,7.64,5.66c3.33,2.97,6.61,6.72,9.83,11.7 l0.46-3.73c-1.13-2.96-2.48-5.68-4.01-8.06c-1.56-2.44-3.29-4.52-5.14-6.16c-2.62-2.32-6.3-4.1-10.32-6.05 c-9.1-4.41-19.83-9.61-25.32-23.96c-0.02-0.05-0.04-0.1-0.05-0.15c-0.2-0.65-0.4-1.16-0.62-1.52c-0.15-0.24-0.26-0.39-0.36-0.43 c-0.03-0.01,0,0.04-0.07,0.08C39.02,2.58,39,2.59,38.98,2.6c-0.25,0.15-0.52,0.42-0.8,0.73c-0.85,0.97-1.4,2-1.96,3.04 c-0.51,0.95-1.02,1.91-1.76,2.89c-0.57,0.75-1.25,1.5-1.97,2.21C32.1,11.86,31.68,12.25,31.27,12.63L31.27,12.63z M108.31,46.89 c0.41-0.29,0.82-0.59,1.2-0.87c0.85-0.63,1.57-1,2.13-1.26c-0.8-0.08-1.91-1.21-2.5-1.72l-1.87-1.63c-0.13-0.11-0.25-0.24-0.33-0.4 c-0.31-0.6-0.64-1.15-0.98-1.65c-0.35-0.5-0.7-0.94-1.07-1.33c-0.23-0.25-0.49-0.49-0.76-0.73c-0.25-0.22-0.51-0.42-0.79-0.61 c-0.59-0.4-1.2-0.73-1.82-0.97c-0.64-0.25-1.28-0.42-1.93-0.5c-2.37-0.32-4.42,0.38-6.12,1.66c-2.1,1.58-3.67,4.05-4.61,6.63 c-1.09,3-1.53,6.35-1.95,9.65l-0.09,0.7l-0.31,2.51h0c-0.05,0.37-0.25,0.71-0.6,0.92c-0.47,0.29-1.06,0.22-1.46-0.12 c-0.12-0.09-0.22-0.21-0.3-0.34c-0.18-0.3-0.35-0.6-0.53-0.89c-2.33-3.76-4.87-7.22-7.69-10.27c-0.54-0.59-1.1-1.16-1.67-1.72 c-5.1-4.91-10.35-7.74-15.7-10.23c-0.99-0.45-1.98-0.89-2.98-1.33c-2.89-1.28-5.81-2.58-8.67-4.1c-3.97-2.07-7.99-4.58-12.07-8.16 c-1.52-1.33-2.88-2.72-4.11-4.16c-0.75-0.87-1.46-1.78-2.12-2.73c-0.26-0.37-0.51-0.74-0.76-1.12c-1.82-2.8-3.19-5.74-4.17-8.76 c-0.14-0.27-0.28-0.46-0.4-0.57c-0.03-0.03-0.01-0.04-0.02-0.04c-0.69-0.03-1.87,2.39-2.46,3.59c-0.06,0.12-0.12,0.24-0.17,0.35 c-3.06,6.12-4.4,12.33-4.23,18.63c0.18,6.32,1.88,12.75,4.91,19.26l0,0c0.06,0.12,0.09,0.26,0.11,0.4 c1.04,10.34,4.61,17.71,10.08,22.82c5.49,5.13,12.95,8.05,21.73,9.47c0.4,0.05,0.77,0.3,0.97,0.69c0.31,0.62,0.05,1.37-0.57,1.68 c-10.57,5.21-20.47,8.21-29.35,7.9c-8.22-0.28-15.54-3.36-21.7-10.05c-0.29,3.08,0.22,5.64,1.37,7.78 c1.46,2.72,3.99,4.82,7.28,6.48c0.16,0.07,0.31,0.18,0.44,0.33c0.45,0.52,0.39,1.31-0.13,1.76c-3.9,3.37-4.46,8.02-3.16,11.89 c0.55,1.65,1.44,3.15,2.56,4.35c1.08,1.17,2.37,2.04,3.75,2.45c2.47,0.75,5.33,0.01,7.94-3.15c0.26-0.33,0.69-0.53,1.14-0.47 c0.68,0.09,1.17,0.72,1.08,1.4c-0.43,3.25-0.16,5.68,0.97,7.32c0.99,1.44,2.71,2.32,5.28,2.68c2.32-4.11,4.7-7.82,7.46-10.9 c2.98-3.32,6.37-5.9,10.55-7.41c5.47-1.98,12.29-1.66,19.25-1.34c2.63,0.12,5.29,0.24,7.83,0.24c9.28-0.01,16.5-2.33,21.49-6.59 c5.04-4.31,7.82-10.66,8.17-18.66c0.19-4.29-1.13-8.3-2.29-11.8c-1.13-3.45-2.12-6.44-1.54-9.09 C102.88,50.77,105.44,48.95,108.31,46.89L108.31,46.89z M31.61,122.87c-0.15-0.02-0.3-0.07-0.44-0.15L31.61,122.87L31.61,122.87z M99.38,73.55c0.05-0.69,0.66-1.2,1.35-1.15c0.69,0.05,1.21,0.66,1.15,1.35c-0.4,4.92-1.77,9.07-4.09,12.44 c-2.33,3.39-5.6,5.98-9.81,7.77c-0.64,0.27-1.37-0.03-1.64-0.66c-0.27-0.64,0.03-1.37,0.66-1.64c3.76-1.61,6.67-3.9,8.73-6.89 C97.8,81.77,99.02,78.03,99.38,73.55L99.38,73.55z M29.69,37.68c0.17-0.67,0.85-1.08,1.52-0.91c0.67,0.17,1.08,0.85,0.91,1.52 c-0.79,3.13,0.6,6.29,3.1,8.87c1.72,1.77,3.95,3.27,6.39,4.32c2.44,1.05,5.06,1.64,7.54,1.6c3.61-0.05,6.95-1.45,9.02-4.75 c0.37-0.59,1.14-0.77,1.72-0.4c0.59,0.37,0.77,1.14,0.4,1.72c-2.58,4.12-6.69,5.86-11.11,5.93c-2.59,0.04-5.28-0.51-7.8-1.49 c-0.01,1.87,0.66,3.73,1.79,5.42c1.43,2.14,3.6,4,6.11,5.28c2.5,1.28,5.34,1.98,8.11,1.79c2.83-0.19,5.61-1.32,7.92-3.7 c0.48-0.5,1.27-0.51,1.77-0.03c0.5,0.48,0.51,1.27,0.03,1.77c-2.78,2.88-6.13,4.24-9.55,4.47c-3.24,0.22-6.53-0.59-9.42-2.06 c-2.88-1.47-5.38-3.63-7.05-6.12c-1.62-2.42-2.47-5.16-2.16-7.92c-2.08-1.09-3.97-2.48-5.52-4.08 C30.35,45.72,28.67,41.75,29.69,37.68L29.69,37.68z M21.16,95.97c-0.68-0.09-1.16-0.73-1.07-1.41c0.09-0.68,0.73-1.16,1.41-1.07 c3.73,0.51,7.46,0.76,11.11,0.61c3.62-0.15,7.16-0.69,10.53-1.74c0.66-0.21,1.36,0.16,1.57,0.82c0.18,0.59-0.09,1.22-0.63,1.49 c-2.3,1.25-4.61,2.51-6.79,3.86c-2.19,1.36-4.3,2.83-6.23,4.51c-0.52,0.45-1.31,0.4-1.76-0.12c-0.45-0.52-0.4-1.31,0.12-1.76 c2.04-1.78,4.26-3.33,6.56-4.76l0.1-0.06c-1.11,0.12-2.23,0.2-3.36,0.25C28.91,96.75,25.02,96.5,21.16,95.97L21.16,95.97z" />
+                                </svg>
+                            </div>
+                            <div
+                                class="absolute inset-0 h-full w-full rounded-xl bg-black/80 px-12 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden] flex items-center justify-center">
+                                <div>
+                                    <h1 class="text-xl font-bold text-yellow-500">Baptism</h1>
+                                    <p class="text-sm pt-3">
+                                        Parents who have been registered for three months or more are required to attend
+                                        Baptism
+                                        preparation classes.<br><br> Please call the Rectory office to schedule your
+                                        class. Registration is required to
+                                        attend.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="group h-80 w-80 [perspective:1000px] p-8">
+                        <div
+                            class="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                            <div class="absolute inset-0 flex items-center justify-center bg-yellow-500 rounded-xl">
+                                <svg class="h-48 w-48 object-contain fill-white" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 122.88 71.41">
+                                    <path class="cls-1"
+                                        d="M38.31,56.51a1.38,1.38,0,1,1-1.37,1.37,1.37,1.37,0,0,1,1.37-1.37Zm41-33.18A23.36,23.36,0,0,0,89.14,20a10.74,10.74,0,0,0,5-6.71.92.92,0,0,1,1.09-.72.94.94,0,0,1,.69.6h0a18,18,0,0,0,4.1,7.13,10.69,10.69,0,0,0,5.91,3,12.93,12.93,0,0,0,.14-2.61,11.42,11.42,0,0,0-.62-3.18,13.26,13.26,0,0,0-5-6.59,13.62,13.62,0,0,0-8-2.4,13.45,13.45,0,0,0-7.36,2.15,12.39,12.39,0,0,0-4.57,5.85,16.32,16.32,0,0,0-1,3.65,21,21,0,0,0-.25,3.14Zm19.35,1.44a1.74,1.74,0,1,1-1.73,1.74,1.73,1.73,0,0,1,1.73-1.74ZM87,24.77a1.74,1.74,0,1,1-1.73,1.74A1.74,1.74,0,0,1,87,24.77ZM75.79,35c.59-.28,1.18-.54,1.78-.79,1-.41,2-.78,3-1.14-.1-.51-.18-1-.24-1.58a5.38,5.38,0,0,1-2.22-2.77,11.89,11.89,0,0,1-.66-4.15,1.46,1.46,0,0,1,0-.22,25,25,0,0,1,.26-4.47,19.36,19.36,0,0,1,1.09-4A14.37,14.37,0,0,1,83.52,9.5a6.41,6.41,0,0,1-.61-2.66A4.25,4.25,0,0,1,84,4a10.61,10.61,0,0,1,6.76-3A15.48,15.48,0,0,1,99.1,2.27c1.69.89,2.8,1.89,3.2,3.21a5,5,0,0,1-.71,4,15.28,15.28,0,0,1,5.63,7.46,13.43,13.43,0,0,1,.73,3.68,14.79,14.79,0,0,1-.26,3.54,1.6,1.6,0,0,1,0,.21,9.57,9.57,0,0,1-.27,4.19,9.94,9.94,0,0,1-2.2,3.79c-.07.29-.15.57-.22.86.71.19,1.43.42,2.16.68l0,0a1,1,0,0,1,.3.05.89.89,0,0,1,.31.19c.68.27,1.36.57,2,.91,4.14,2.05,7.06,4.31,9.12,7.26s3.22,6.52,3.84,11.2v.12h0V69.69a.93.93,0,1,1-1.86,0v-16c-.58-4.34-1.65-7.63-3.5-10.29s-4.57-4.76-8.43-6.66c-.44-.22-.88-.42-1.32-.61-1.81,4.94-3.87,8.57-6.18,11a11.72,11.72,0,0,1-8.45,4.08H93A13.91,13.91,0,0,1,83.75,47a20,20,0,0,1-3.35-4.62c-.18-.44-.36-.87-.56-1.29s-.48-1-.74-1.46c-.45-1.08-.87-2.25-1.25-3.5l-.82.36h0c-.41-.52-.82-1-1.24-1.47Zm6.79-1.4a.86.86,0,0,1,.06.23,9.38,9.38,0,0,0,1.24,2.84,6.11,6.11,0,0,0,3.84,2.62.86.86,0,0,1,.36.17,7.54,7.54,0,0,0,4.52,1.64,8.17,8.17,0,0,0,4.57-1.67.9.9,0,0,1,.51-.16,4.76,4.76,0,0,0,3.44-1.9,13.89,13.89,0,0,0,2.4-5.69,1,1,0,0,1,.23-.43h0a8.15,8.15,0,0,0,2-3.24A7.46,7.46,0,0,0,106,25.2a12.51,12.51,0,0,1-7.23-3.54,17.52,17.52,0,0,1-3.62-5.46,13.63,13.63,0,0,1-5,5.39A25.23,25.23,0,0,1,79.32,25.2a9.26,9.26,0,0,0,.52,2.88,3.45,3.45,0,0,0,1.77,2,.93.93,0,0,1,.52.76h0a18.15,18.15,0,0,0,.45,2.75ZM81,34.89c-.47.16-1,.34-1.44.53,1.42,4.64,3.27,8,5.51,10.28a12.07,12.07,0,0,0,8,3.67,9.9,9.9,0,0,0,7.14-3.5c2.14-2.28,4.07-5.72,5.8-10.44-.52-.18-1-.34-1.56-.47a12.51,12.51,0,0,1-1.94,3.59A6.51,6.51,0,0,1,98,41.1,9.81,9.81,0,0,1,92.61,43a9.24,9.24,0,0,1-5.5-1.89,7.94,7.94,0,0,1-4.77-3.35A10.81,10.81,0,0,1,81,34.89ZM111.63,53a.93.93,0,1,1,1.82-.38,50.16,50.16,0,0,1,1.33,10c0,3-.56,5.41-2,7-2.85,3.14-6.94,1.66-10.18.49l-.84-.29a.91.91,0,0,1-.56-1.18.92.92,0,0,1,1.18-.57l.84.31c2.73,1,6.17,2.22,8.19,0,1.06-1.18,1.49-3.17,1.48-5.72a49.41,49.41,0,0,0-1.3-9.59ZM100,8.51A3.32,3.32,0,0,0,100.54,6c-.24-.78-1-1.45-2.3-2.11a13.6,13.6,0,0,0-7.27-1A8.78,8.78,0,0,0,85.4,5.26a2.49,2.49,0,0,0-.63,1.62,4.17,4.17,0,0,0,.34,1.62A15.76,15.76,0,0,1,92.4,6.69,15.53,15.53,0,0,1,100,8.51ZM88.62,35.63a.92.92,0,0,1-.25-1.29.94.94,0,0,1,1.3-.24,5.58,5.58,0,0,0,3.13,1.14,4.38,4.38,0,0,0,2.78-1.09.92.92,0,1,1,1.16,1.44,6.18,6.18,0,0,1-3.95,1.51,7.35,7.35,0,0,1-4.17-1.47Zm-55.1-3.07a1.14,1.14,0,1,1,1.26-1.9,6.09,6.09,0,0,0,7.26,0,1.12,1.12,0,0,1,1.57.33,1.14,1.14,0,0,1-.33,1.58,8.21,8.21,0,0,1-9.76,0Zm-4-10.18a1.14,1.14,0,0,1-1.14-2,5.8,5.8,0,0,1,3.08-.82,7,7,0,0,1,3,.78,1.14,1.14,0,0,1-1,2.05,4.57,4.57,0,0,0-2-.55,3.71,3.71,0,0,0-1.89.51Zm14.28,0a1.14,1.14,0,1,1-1.14-2,5.74,5.74,0,0,1,3.07-.82,7,7,0,0,1,3,.78,1.14,1.14,0,0,1-1,2.05,4.61,4.61,0,0,0-2-.55,3.69,3.69,0,0,0-1.89.51ZM12.25,57.88a1.14,1.14,0,1,1,2.28,0V70.27a1.14,1.14,0,1,1-2.28,0V57.88Zm49.85,0a1.14,1.14,0,1,1,2.28,0V70.27a1.14,1.14,0,0,1-2.28,0V57.88ZM53.39,27.65c2.89,1.45,5.59,2.93,8.19,4.5s5.28,3.33,7.92,5.2a.87.87,0,0,1,.14.12,17.55,17.55,0,0,1,4.74,6.16,26.78,26.78,0,0,1,2.24,9.72v.06h0V69.55a1.14,1.14,0,0,1-2.28,0V53.41h0a24.36,24.36,0,0,0-2-8.81,15.45,15.45,0,0,0-4.14-5.39c-2.59-1.83-5.14-3.51-7.78-5.1-.69-.41-1.38-.82-2.08-1.22-2.18,9.9-6,17.22-11.52,22a41.59,41.59,0,0,1-8.3-6.76,36.51,36.51,0,0,1-8.26,6.48C24.52,50,20.87,42.45,18.87,32.48c-.85.49-1.69,1-2.52,1.49-2.7,1.66-5.31,3.4-7.91,5.24A15.54,15.54,0,0,0,4.3,44.6a24.36,24.36,0,0,0-2,8.81h0V69.55a1.14,1.14,0,1,1-2.28,0V53.41H0v-.06a26.78,26.78,0,0,1,2.24-9.72A17.44,17.44,0,0,1,7,37.47a.74.74,0,0,1,.13-.12C9.75,35.5,12.4,33.72,15.16,32s5.34-3.14,8.18-4.56l-.05-.67A5.45,5.45,0,0,1,20.84,23a8.18,8.18,0,0,1,.91-5l.05-.08a10.91,10.91,0,0,1-.11-7.81,15.34,15.34,0,0,1,5.72-6.85l.08,0h0a20.85,20.85,0,0,1,11-3.2,22.55,22.55,0,0,1,11,3.18h0A13.27,13.27,0,0,1,55.17,8.9a12.12,12.12,0,0,1,.48,8.37A13,13,0,0,1,56,22.63a6.2,6.2,0,0,1-2.56,4.15l-.09.87Zm-25,9.93c1.38,4.63,4.57,8.27,10.1,10.47C43.23,46.67,47,42.5,49.06,37.27l-.2-.2a18.64,18.64,0,0,1-3.34,2.1,17.49,17.49,0,0,1-6.75,1.59,16.61,16.61,0,0,1-6.86-1.15,13.56,13.56,0,0,1-3.52-2ZM30,4.36a21.89,21.89,0,0,1-1.43,7.82,18.12,18.12,0,0,1-4.45,6.66,1.26,1.26,0,0,1-.41.25,5.85,5.85,0,0,0-.67,3.56A3.34,3.34,0,0,0,24.68,25l.21.1h0a1.12,1.12,0,0,1,.61.93l.14,2a11.25,11.25,0,0,0,7.1,9.52,14.57,14.57,0,0,0,5.94,1,15.36,15.36,0,0,0,5.89-1.38,10.54,10.54,0,0,0,6.49-9,.34.34,0,0,1,0-.1l.22-2h0a1.13,1.13,0,0,1,.53-.83,4.14,4.14,0,0,0,2-2.93,10.06,10.06,0,0,0-.22-3.84,1,1,0,0,1-.44-.1,10.54,10.54,0,0,1-4.95-5.52,21.89,21.89,0,0,1-1.79-8.65A19.37,19.37,0,0,0,38.5,2.25,18.11,18.11,0,0,0,30,4.36ZM23.6,16.12a15.82,15.82,0,0,0,2.89-4.76,19.22,19.22,0,0,0,1.2-5.49,12.23,12.23,0,0,0-3.89,5,8.57,8.57,0,0,0-.2,5.25Zm30-.13a9.58,9.58,0,0,0-.5-6.14,10.86,10.86,0,0,0-4.4-4.51,19.43,19.43,0,0,0,1.56,6.51A8.81,8.81,0,0,0,53.64,16ZM38.31,67.38a1.38,1.38,0,1,1-1.37,1.38,1.37,1.37,0,0,1,1.37-1.38Zm0-5.44a1.38,1.38,0,1,1-1.37,1.38,1.38,1.38,0,0,1,1.37-1.38Z" />
+                                </svg>
+                            </div>
+                            <div
+                                class="absolute inset-0 h-full w-full rounded-xl bg-black/80 px-12 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden] flex items-center justify-center">
+                                <div>
+                                    <h1 class="text-2xl font-bold text-yellow-500">Homebound</h1>
+                                    <p class="text-lg pt-3">
+                                        The aged and ill please contact the Rectory about Holy Communion.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- footer -->
+    <footer class="w-full bg-shRed relative">
+        <div class="absolute inset-11 bg-no-repeat bg-center bg-contain opacity-10"
+            style="background-image: url('../assets/SHCCLogoWhite.png'); pointer-events: none;"></div>
+        <div class="w-full border-t border-gray-300 my-8"></div>
+        <div class="container mx-auto grid grid-cols-4 gap-4 text-white" style="z-index: 1;">
+            <div class="p-2">
+                <h3
+                    class="text-xl pb-2 relative after:content-[''] after:block after:h-1 after:bg-yellow-500 after:absolute after:left-0 after:bottom-0 after:w-full after:mt-2">
+                    Office Hours</h3><br>
+                <h3 class="text-xl">Monday - Friday</h3>
+                <h2 class="text-base">8:15 - 9:15 AM</h2>
+                <br>
+                <h3 class="text-xl">Saturday</h3>
+                <h2 class="text-base">8:15 - 9:15 AM</h2>
+                <h2 class="text-base">5:00 - 6:00 PM</h2>
+                <h2 class="text-base">7:00 - 8:00 PM</h2>
+                <br>
+                <h3 class="text-xl">Sunday</h3>
+                <h2 class="text-base">7:30 - 8:30 AM</h2>
+                <h2 class="text-base">9:30 - 10:30 AM</h2>
+                <h2 class="text-base">11:30 AM - 12:30 PM</h2>
+                <h2 class="text-base">5:00 - 6:00 PM</h2>
+            </div>
+
+            <div class="p-2">
+                <h3
+                    class="text-xl pb-2 relative after:content-[''] after:block after:h-1 after:bg-yellow-500 after:absolute after:left-0 after:bottom-0 after:w-full after:mt-2">
+                    Rectory Address</h3><br>
+                <h3 class="text-base">5752 Blanding Blvd,</h3>
+                <h2 class="text-base">Jacksonville, FL 32244</h2>
+                <br>
+            </div>
+
+            <div class="p-2">
+                <h3
+                    class="text-xl pb-2 relative after:content-[''] after:block after:h-1 after:bg-yellow-500 after:absolute after:left-0 after:bottom-0 after:w-full after:mt-2">
+                    Connect with us</h3><br>
+                <h3 class="text-base">Phone: (904) 771-2152</h3>
+                <h2 class="text-base">Fax: (904) 573-8816</h2>
+                <br>
+            </div>
+
+            <div class="p-2">
+                <h3
+                    class="text-xl pb-2 relative after:content-[''] after:block after:h-1 after:bg-yellow-500 after:absolute after:left-0 after:bottom-0 after:w-full after:mt-2">
+                    Links</h3><br>
+                <a href="https://discovermass.com/church/sacred-heart-jacksonville-fl/#bulletins"
+                    class="hover:text-yellow-500 text-lg">Church Bulletin</a>
+                <br>
+                <br>
+                <h3 class="text-xl text-yellow-500">Diocesan Links</h3>
+                <a href="https://discovermass.com/church/sacred-heart-jacksonville-fl/#bulletins"
+                    class="hover:text-yellow-500 text-base">Diocese of St.Augustine</a><br>
+                <a href="https://discovermass.com/church/sacred-heart-jacksonville-fl/#bulletins"
+                    class="hover:text-yellow-500 text-base">Diocesan Center for Family Life</a><br>
+                <br>
+                <h3 class="text-xl text-yellow-500">Catholic Links</h3>
+                <a href="https://discovermass.com/church/sacred-heart-jacksonville-fl/#bulletins"
+                    class="hover:text-yellow-500 text-base">United States Conference of Catholic Bishops</a><br>
+                <a href="https://discovermass.com/church/sacred-heart-jacksonville-fl/#bulletins"
+                    class="hover:text-yellow-500 text-base">The Holy See</a><br>
+            </div>
+
+        </div>
+        <br>
+        <p class="text-lg items-center text-center text-white"
+            style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; z-index: 1;">
+            © Sacred Heart Catholic Church 2024
+        </p>
+    </footer>
+    <!-- footer -->
+
+</body>
+
+
+</html>

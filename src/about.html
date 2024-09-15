@@ -29,7 +29,7 @@
             class="text-black hover:text-shRed py-2 relative hover:after:content-[''] hover:after:absolute hover:after:left-0 hover:after:bottom-0 hover:after:h-1 hover:after:w-full hover:after:bg-shRed">About
             Us</a>
           <ul
-            class="absolute hidden group-hover:block bg-white border border-gray-300 rounded-md shadow-lg whitespace-nowrap">
+            class="absolute hidden group-hover:block bg-white border border-gray-300 rounded-md shadow-lg whitespace-nowrap overflow-hidden">
             <li><a href="./about.html#history" class="block px-4 py-2 hover:bg-shRed hover:text-white">History</a></li>
             <li><a href="./about.html#staff" class="block px-4 py-2 hover:bg-shRed hover:text-white">Staff</a></li>
             <li><a href="./about.html#mass_schedule" class="block px-4 py-2 hover:bg-shRed hover:text-white">Mass
@@ -42,20 +42,22 @@
             class="text-black hover:text-shRed py-2 relative hover:after:content-[''] hover:after:absolute hover:after:left-0 hover:after:bottom-0 hover:after:h-1 hover:after:w-full hover:after:bg-shRed">Faith
             Formation</a>
           <ul
-            class="absolute hidden group-hover:block bg-white border border-gray-300 rounded-md shadow-lg whitespace-nowrap">
+            class="absolute hidden group-hover:block bg-white border border-gray-300 rounded-md shadow-lg whitespace-nowrap overflow-hidden">
+            <li><a href="./faith_formation.html#religious_education"
+              class="block px-4 py-2 hover:bg-shRed hover:text-white">Religious Education</a></li>
+            <li><a href="./faith_formation.html#adult_faith_formation"
+                class="block px-4 py-2 hover:bg-shRed hover:text-white">Adult Faith Formation</a></li>
             <li><a href="./faith_formation.html#RCIA" class="block px-4 py-2 hover:bg-shRed hover:text-white">Rite Of
                 Christian Initiation -
                 RCIA</a></li>
-            <li><a href="./faith_formation.html#religious_education"
-                class="block px-4 py-2 hover:bg-shRed hover:text-white">Religious Education</a></li>
-            <li><a href="./faith_formation.html#adult_faith_formation"
-                class="block px-4 py-2 hover:bg-shRed hover:text-white">Adult Faith Formation</a></li>
+            
+            
           </ul>
         </li>
         <li class="group relative"><a href="./ministries.html"
             class="text-black hover:text-shRed py-2 relative hover:after:content-[''] hover:after:absolute hover:after:left-0 hover:after:bottom-0 hover:after:h-1 hover:after:w-full hover:after:bg-shRed">Ministries</a>
           <ul
-            class="absolute hidden group-hover:block bg-white border border-gray-300 rounded-md shadow-lg whitespace-nowrap">
+            class="absolute hidden group-hover:block bg-white border border-gray-300 rounded-md shadow-lg whitespace-nowrap overflow-hidden">
             <li><a href="./ministries.html#liturgical_ministries"
                 class="block px-4 py-2 hover:bg-shRed hover:text-white">Liturgical Ministries</a></li>
             <li><a href="./ministries.html#parish_ministries"
@@ -68,7 +70,7 @@
         <li class="group relative"> <a href="./contact.html"
             class="text-black hover:text-shRed py-2 relative hover:after:content-[''] hover:after:absolute hover:after:left-0 hover:after:bottom-0 hover:after:h-1 hover:after:w-full hover:after:bg-shRed">Contact</a>
           <ul
-            class="absolute hidden group-hover:block bg-white border border-gray-300 rounded-md shadow-lg whitespace-nowrap">
+            class="absolute hidden group-hover:block bg-white border border-gray-300 rounded-md shadow-lg whitespace-nowrap overflow-hidden">
             <li><a href="./contact.html#contact_us" class="block px-4 py-2 hover:bg-shRed hover:text-white">Contact
                 Us</a></li>
             <li><a href="./contact.html#register_as_parishioner"
@@ -86,7 +88,7 @@
 
   <!-- Full-screen side menu -->
   <div id="side-menu"
-    class="fixed top-0 right-0 h-screen w-64 bg-white shadow-lg transform translate-x-full md:hidden transition duration-300 ease-in-out">
+    class="fixed top-0 right-0 h-screen w-64 bg-white shadow-lg transform translate-x-full md:hidden transition duration-300 ease-in-out z-10">
     <ul class="py-16 space-y-4">
       <li><a href="./home.html" class="block px-4 py-2 text-black hover:text-shRed">Home</a></li>
       <li><a href="./about.html" class="block px-4 py-2 text-black hover:text-shRed">About Us</a></li>
@@ -113,12 +115,15 @@
 
 
   <main class="pt-24">
-    <section id="history">
+    <section id="history" class="relative bg-cover bg-center">
+      <div class="absolute inset-0 bg-no-repeat bg-center bg-cover opacity-20"
+        style="background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url('../assets/main_background.jpg'); pointer-events: none;">
+      </div>
       <div class="text-justify text-black text-lg p-6 relative">
-        <h1 class="text-2xl text-shRed font-bold pb-4">
+        <h1 class="text-2xl text-shRed font-bold pb-4 relative after:content-[''] after:block after:h-1 after:bg-yellow-500 after:absolute after:left-0 after:bottom-0 after:w-full after:mt-2">
           Our Parish History
         </h1>
-        <p class="pb-4">
+        <p class="pb-4 pt-4">
           Sacred Heart Parish was formally established by Archbishop Joseph Hurley on June 26, 1959. Msgr. Leo Danaher
           was the founding pastor. Msgr. Patrick Madden became the new pastor of Sacred Heart in 1970. He ministered to
           the parish until his retirement in June of 2001.
@@ -150,26 +155,123 @@
         </p>
       </div>
     </section>
-    
+
     <section id="staff">
       <div class="text-justify text-black text-lg p-6 relative">
-        <h1 class="text-2xl text-shRed font-bold pb-4">
+        <h1 class="text-2xl text-shRed font-bold pb-4 relative after:content-[''] after:block after:h-1 after:bg-yellow-500 after:absolute after:left-0 after:bottom-0 after:w-full after:mt-2">
           Sacred Heart Catholic Church Clergy
         </h1>
+    
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 p-4 justify-items-center w-full pt-8">
+          
+          <div class="group relative rounded-xl overflow-hidden shadow-xl w-80 h-96 transform hover:scale-105 transition duration-300 ease-in-out hover:border-4 hover:border-shRed">
+            <img src="../assets/staff/FatherJames.jpg" class="w-80">
+            <div class="absolute bottom-0 left-0 right-0 bg-white justify-items-center p-4 group-hover:bg-shRed transition duration-300">
+              <p class="text-center font-bold text-shRed text-xl group-hover:text-white transition duration-300">Rev. James Kaniparampil CMI</p>
+              <p class="text-center font-bold text-yellow-500 text-base group-hover:text-yellow-500 transition duration-300">Pastor</p>
+            </div>
+          </div>
+
+          <div class="group relative rounded-xl overflow-hidden shadow-xl w-80 h-96 transform hover:scale-105 transition duration-300 ease-in-out hover:border-4 hover:border-shRed">
+            <img src="../assets/staff/Fr.-Alex-Small.jpg" class="w-80">
+            <div class="absolute bottom-0 left-0 right-0 bg-white justify-items-center p-4 group-hover:bg-shRed transition duration-300">
+              <p class="text-center font-bold text-shRed text-xl group-hover:text-white transition duration-300">Rev. Alexander Carandang OSJ</p>
+              <p class="text-center font-bold text-yellow-500 text-base group-hover:text-yellow-500 transition duration-300">Parochial Vicar</p>
+            </div>
+          </div>
+
+          <div class="group relative rounded-xl overflow-hidden shadow-xl w-80 h-96 transform hover:scale-105 transition duration-300 ease-in-out hover:border-4 hover:border-shRed">
+            <img src="../assets/staff/Parochial-Vicar-Spanish-Ministry.jpeg" class="w-80">
+            <div class="absolute bottom-0 left-0 right-0 bg-white justify-items-center p-4 group-hover:bg-shRed transition duration-300">
+              <p class="text-center font-bold text-shRed text-xl group-hover:text-white transition duration-300">Rev. Cesar Torres-Pinzon</p>
+              <p class="text-center font-bold text-yellow-500 text-base group-hover:text-yellow-500 transition duration-300">Parochial Vicar (Spanish Ministry)</p>
+            </div>
+          </div>
+
+          <div class="group relative rounded-xl overflow-hidden shadow-xl w-80 h-96 transform hover:scale-105 transition duration-300 ease-in-out hover:border-4 hover:border-shRed">
+            <img src="../assets/staff/Decon-Jeff-Burggess-Square.jpg" class="w-80">
+            <div class="absolute bottom-0 left-0 right-0 bg-white justify-items-center p-4 group-hover:bg-shRed transition duration-300">
+              <p class="text-center font-bold text-shRed text-xl group-hover:text-white transition duration-300">Deacon Jeff Burgess</p>
+              <p class="text-center font-bold text-yellow-500 text-base group-hover:text-yellow-500 transition duration-300">Deacon</p>
+            </div>
+          </div>
+
+          <div class="group relative rounded-xl overflow-hidden shadow-xl w-80 h-96 transform hover:scale-105 transition duration-300 ease-in-out hover:border-4 hover:border-shRed">
+            <img src="../assets/staff/DeconScottResize.jpg" class="w-80">
+            <div class="absolute bottom-0 left-0 right-0 bg-white justify-items-center p-4 group-hover:bg-shRed transition duration-300">
+              <p class="text-center font-bold text-shRed text-xl group-hover:text-white transition duration-300">Deacon Scott Conway</p>
+              <p class="text-center font-bold text-yellow-500 text-base group-hover:text-yellow-500 transition duration-300">Deacon</p>
+            </div>
+          </div>
+
+        </div>
+        
       </div>
 
-      <div class="text-justify text-black text-lg p-6 relative">
-        <h1 class="text-2xl text-shRed font-bold pb-4">
-          Sacred Heart Catholic Church Staff
-        </h1>
-      </div>
+        <div class="text-justify text-black text-lg p-6 relative">
+          <h1 class="text-2xl text-shRed font-bold pb-4 relative after:content-[''] after:block after:h-1 after:bg-yellow-500 after:absolute after:left-0 after:bottom-0 after:w-full after:mt-2">
+            Sacred Heart Catholic Church Staff
+          </h1>
+
+          <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 p-4 justify-items-center w-full pt-8">
+          
+            <div class="group relative rounded-xl overflow-hidden shadow-xl w-80 h-112 transform hover:scale-105 transition duration-300 ease-in-out hover:border-4 hover:border-yellow-500">
+              <img src="../assets/staff/LCavallo-17-18-e1507493320218.jpg" class="w-80">
+              <div class="absolute bottom-0 left-0 right-0 bg-white justify-items-center p-4 group-hover:bg-yellow-500 transition duration-300">
+                <p class="text-center font-bold text-black text-xl group-hover:text-white transition duration-300">Linda Cavallo</p>
+                <p class="text-center font-bold text-yellow-500 text-base group-hover:text-shRed transition duration-300">Parish Business Manager</p>
+              </div>
+            </div>
+  
+            <div class="group relative rounded-xl overflow-hidden shadow-xl w-80 h-112 transform hover:scale-105 transition duration-300 ease-in-out hover:border-4 hover:border-yellow-500">
+              <img src="../assets/staff/CherieMooneySnip-e1555288738646.png" class="w-80">
+              <div class="absolute bottom-0 left-0 right-0 bg-white justify-items-center p-4 group-hover:bg-yellow-500 transition duration-300">
+                <p class="text-center font-bold text-black text-xl group-hover:text-white transition duration-300">Cherie Mooney</p>
+                <p class="text-center font-bold text-yellow-500 text-base group-hover:text-shRed transition duration-300">Office Assistant</p>
+              </div>
+            </div>
+
+            <div class="group relative rounded-xl overflow-hidden shadow-xl w-80 h-112 transform hover:scale-105 transition duration-300 ease-in-out hover:border-4 hover:border-yellow-500">
+              <img src="../assets/staff/KaylynProvost-e1718589537563.jpeg" class="w-80">
+              <div class="absolute bottom-0 left-0 right-0 bg-white justify-items-center p-4 group-hover:bg-yellow-500 transition duration-300">
+                <p class="text-center font-bold text-black text-xl group-hover:text-white transition duration-300">Kaylyn Provost</p>
+                <p class="text-center font-bold text-yellow-500 text-base group-hover:text-shRed transition duration-300">Office Assistant</p>
+              </div>
+            </div>
+
+            <div class="group relative rounded-xl overflow-hidden shadow-xl w-80 h-112 transform hover:scale-105 transition duration-300 ease-in-out hover:border-4 hover:border-yellow-500">
+              <img src="../assets/staff/SCochran-17-18-e1507493294300.jpg" class="w-80">
+              <div class="absolute bottom-0 left-0 right-0 bg-white justify-items-center p-4 group-hover:bg-yellow-500 transition duration-300">
+                <p class="text-center font-bold text-black text-xl group-hover:text-white transition duration-300">Santa Cochran</p>
+                <p class="text-center font-bold text-yellow-500 text-base group-hover:text-shRed transition duration-300">Religious Education Coordinator</p>
+              </div>
+            </div>
+
+            <div class="group relative rounded-xl overflow-hidden shadow-xl w-80 h-112 transform hover:scale-105 transition duration-300 ease-in-out hover:border-4 hover:border-yellow-500">
+              <img src="../assets/staff/susan.jpg" class="w-80">
+              <div class="absolute bottom-0 left-0 right-0 bg-white justify-items-center p-4 group-hover:bg-yellow-500 transition duration-300">
+                <p class="text-center font-bold text-black text-xl group-hover:text-white transition duration-300">Susan Altman</p>
+                <p class="text-center font-bold text-yellow-500 text-base group-hover:text-shRed transition duration-300">Music Director</p>
+              </div>
+            </div>
+
+            <div class="group relative rounded-xl overflow-hidden shadow-xl w-80 h-112 transform hover:scale-105 transition duration-300 ease-in-out hover:border-4 hover:border-yellow-500">
+              <img src="../assets/staff/DanielleCaldwell.jpeg" class="w-80">
+              <div class="absolute bottom-0 left-0 right-0 bg-white justify-items-center p-4 group-hover:bg-yellow-500 transition duration-300">
+                <p class="text-center font-bold text-black text-xl group-hover:text-white transition duration-300">Danielle Cldwell</p>
+                <p class="text-center font-bold text-yellow-500 text-base group-hover:text-shRed transition duration-300">Youth Director</p>
+              </div>
+            </div>
+  
+          </div>
+        </div>
     </section>
 
-    <section id="service timings" class="relative bg-cover bg-center">
+    <section id="mass_schedule" class="relative bg-cover bg-center">
       <div class="absolute inset-0 bg-no-repeat bg-center bg-cover opacity-20"
         style="background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url('../assets/holy_communion.jpg'); pointer-events: none;">
       </div>
-      
+
       <div class="container mx-auto grid grid-cols-2 gap-4 relative" style="z-index: 1;">
         <div>
           <h1
@@ -204,6 +306,39 @@
 
         </div>
       </div>
+    </section>
+
+    <section id="pastors_message">
+      <div class="text-justify text-black text-lg p-6 relative justify-items-center">
+        
+        <h1 class="text-2xl text-shRed font-bold pb-4">
+          A Message From Father James
+        </h1>
+        <div class="absolute inset-11 bg-no-repeat bg-center bg-contain opacity-5" style="background-image: url('../assets/SHCCLogoBlack.png'); pointer-events: none; background-size: 50%;"></div>
+        <div class="group relative rounded-xl overflow-hidden shadow-xl w-full h-auto border-4 border-yellow-500 hover:border-4 hover:border-shRed text-justify p-6 transform hover:scale-102 transition duration-300 ease-in-out">
+          <p class="text-xl text-shRed font-bold pb-4">
+            Welcome!
+          </p>
+          <p class="pb-4">
+            Whether you are a visitor, new to the area, interested in becoming Catholic, seeking to return to the practice of your faith, or an active member of our parish, I along with the parishioners and school families of Sacred Heart Catholic Church and School welcome you to our spiritual home. We are pleased that you have come to our website and we want to do all that we can to assist you.
+          </p>
+          <p class="pb-4">
+            Sacred Heart Catholic Church, located on the west-side of Jacksonville, is a family-like community with rich cultural diversity while remaining one in faith and liturgy. We try to put our love into actions by works of charity through outreach programs. We provide ample opportunities to grow in faith through ministries like Religious Education for children, Youth Ministry, and Adult Faith Formation. We share in the upkeep of the parish by inviting members to participate in stewardship, pastoral, and social ministries. Our Parish School, staffed by the Mercedarian Sisters of the Blessed Sacrament and many dynamic teachers, provides excellent human and spiritual formation for our young people.
+          </p>
+          <p class="pb-4">
+            If you are new to the area or looking for a church, I want to invite you to come visit and celebrate the Eucharist with us. The parish staff and I will be glad to be of help to you in any way possible. If you have any questions, please do not hesitate to call us or email me or any of the staff personnel. Please refer to our parish bulletin, Facebook page, Instagram account, or myParish App for upcoming parish events.
+          </p>
+          <p class="pb-4 italic font-bold">
+            "May God bless you and keep you; the Lord make his face shine on you and be gracious to you; the Lord turn his face toward you and give you peace" (Num 6:24-26).
+          </p>
+          <p class="font-bold text-shRed">
+            Fr. James Kaniparampil CMI
+          </p>
+          <p class="font-bold text-yellow-500">
+            Pastor
+          </p>
+        </div>
+
     </section>
 
   </main>

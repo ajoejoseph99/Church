@@ -10,87 +10,85 @@
 
 <body class="bg-white" style="font-family:'Playfair Display', serif;">
 
-    <!-- header -->
-    <header class="w-full h-auto bg-white fixed top-0 left-0 right-0 z-50 bg-opacity-90">
-        <nav class="container mx-auto p-1 flex justify-between items-center w-full">
-            <img src="../assets/SHCCLogoBlack.png" class="h-16 md:h-20" alt="Church logo">
-            <div class="md:hidden">
-                <button id="hamburger-button" class="text-black hover:text-shRed">
-                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h16m-7 6h7"></path>
-                    </svg>
-                </button>
-            </div>
-            <ul id="nav-links" class="hidden md:flex space-x-8 text-xl">
-                <li><a href="./home.html"
-                        class="text-black hover:text-shRed py-2 relative hover:after:content-[''] hover:after:absolute hover:after:left-0 hover:after:bottom-0 hover:after:h-1 hover:after:w-full hover:after:bg-shRed">Home</a>
-                </li>
-                <li class="group relative"><a href="./about.html"
-                        class="text-black hover:text-shRed py-2 relative hover:after:content-[''] hover:after:absolute hover:after:left-0 hover:after:bottom-0 hover:after:h-1 hover:after:w-full hover:after:bg-shRed">About
-                        Us</a>
-                    <ul
-                        class="absolute hidden group-hover:block bg-white border border-gray-300 rounded-md shadow-lg whitespace-nowrap">
-                        <li><a href="./about.html#history"
-                                class="block px-4 py-2 hover:bg-shRed hover:text-white">History</a></li>
-                        <li><a href="./about.html#staff"
-                                class="block px-4 py-2 hover:bg-shRed hover:text-white">Staff</a></li>
-                        <li><a href="./about.html#mass_schedule"
-                                class="block px-4 py-2 hover:bg-shRed hover:text-white">Mass Schedule</a></li>
-                        <li><a href="./about.html#pastors_message"
-                                class="block px-4 py-2 hover:bg-shRed hover:text-white">Pastors Message</a></li>
-                    </ul>
-                </li>
-                <li class="group relative"><a href="./faith_formation.html"
-                        class="text-black hover:text-shRed py-2 relative hover:after:content-[''] hover:after:absolute hover:after:left-0 hover:after:bottom-0 hover:after:h-1 hover:after:w-full hover:after:bg-shRed">Faith
-                        Formation</a>
-                    <ul
-                        class="absolute hidden group-hover:block bg-white border border-gray-300 rounded-md shadow-lg whitespace-nowrap">
-                        <li><a href="./faith_formation.html#RCIA"
-                                class="block px-4 py-2 hover:bg-shRed hover:text-white">Rite Of Christian Initiation -
-                                RCIA</a></li>
-                        <li><a href="./faith_formation.html#religious_education"
-                                class="block px-4 py-2 hover:bg-shRed hover:text-white">Religious Education</a></li>
-                        <li><a href="./faith_formation.html#adult_faith_formation"
-                                class="block px-4 py-2 hover:bg-shRed hover:text-white">Adult Faith Formation</a></li>
-                    </ul>
-                </li>
-                <li class="group relative"><a href="./ministries.html"
-                        class="text-black hover:text-shRed py-2 relative hover:after:content-[''] hover:after:absolute hover:after:left-0 hover:after:bottom-0 hover:after:h-1 hover:after:w-full hover:after:bg-shRed">Ministries</a>
-                    <ul
-                        class="absolute hidden group-hover:block bg-white border border-gray-300 rounded-md shadow-lg whitespace-nowrap">
-                        <li><a href="./ministries.html#liturgical_ministries"
-                                class="block px-4 py-2 hover:bg-shRed hover:text-white">Liturgical Ministries</a></li>
-                        <li><a href="./ministries.html#parish_ministries"
-                                class="block px-4 py-2 hover:bg-shRed hover:text-white">Parish Ministries</a></li>
-                    </ul>
-                </li>
-                <li><a href="./youth_ministry.html"
-                        class="text-black hover:text-shRed py-2 relative hover:after:content-[''] hover:after:absolute hover:after:left-0 hover:after:bottom-0 hover:after:h-1 hover:after:w-full hover:after:bg-shRed">Youth
-                        Ministry</a></li>
-                <li class="group relative"> <a href="./contact.html"
-                        class="text-black hover:text-shRed py-2 relative hover:after:content-[''] hover:after:absolute hover:after:left-0 hover:after:bottom-0 hover:after:h-1 hover:after:w-full hover:after:bg-shRed">Contact</a>
-                    <ul
-                        class="absolute hidden group-hover:block bg-white border border-gray-300 rounded-md shadow-lg whitespace-nowrap">
-                        <li><a href="./contact.html#contact_us"
-                                class="block px-4 py-2 hover:bg-shRed hover:text-white">Contact Us</a></li>
-                        <li><a href="./contact.html#register_as_parishioner"
-                                class="block px-4 py-2 hover:bg-shRed hover:text-white">Register as a Parishioner</a>
-                        </li>
-                    </ul>
-                </li>
-                <li><a href="https://shcsjax.com/"
-                        class="text-black hover:text-shRed py-2 relative hover:after:content-[''] hover:after:absolute hover:after:left-0 hover:after:bottom-0 hover:after:h-1 hover:after:w-full hover:after:bg-shRed">Sacred
-                        Heart School</a></li>
-            </ul>
-        </nav>
-    </header>
-    <!-- header -->
+<!-- header -->
+<header class="w-full h-auto bg-white fixed top-0 left-0 right-0 z-50 bg-opacity-90">
+    <nav class="container mx-auto p-1 flex justify-between items-center w-full">
+      <img src="../assets/SHCCLogoBlack.png" class="h-16 md:h-20" alt="Church logo">
+      <div class="md:hidden">
+        <button id="hamburger-button" class="text-black hover:text-shRed">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+      <ul id="nav-links" class="hidden md:flex space-x-8 text-xl">
+        <li><a href="./home.html"
+            class="text-black hover:text-shRed py-2 relative hover:after:content-[''] hover:after:absolute hover:after:left-0 hover:after:bottom-0 hover:after:h-1 hover:after:w-full hover:after:bg-shRed">Home</a>
+        </li>
+        <li class="group relative"><a href="./about.html"
+            class="text-black hover:text-shRed py-2 relative hover:after:content-[''] hover:after:absolute hover:after:left-0 hover:after:bottom-0 hover:after:h-1 hover:after:w-full hover:after:bg-shRed">About
+            Us</a>
+          <ul
+            class="absolute hidden group-hover:block bg-white border border-gray-300 rounded-md shadow-lg whitespace-nowrap overflow-hidden">
+            <li><a href="./about.html#history" class="block px-4 py-2 hover:bg-shRed hover:text-white">History</a></li>
+            <li><a href="./about.html#staff" class="block px-4 py-2 hover:bg-shRed hover:text-white">Staff</a></li>
+            <li><a href="./about.html#mass_schedule" class="block px-4 py-2 hover:bg-shRed hover:text-white">Mass
+                Schedule</a></li>
+            <li><a href="./about.html#pastors_message" class="block px-4 py-2 hover:bg-shRed hover:text-white">Pastors
+                Message</a></li>
+          </ul>
+        </li>
+        <li class="group relative"><a href="./faith_formation.html"
+            class="text-black hover:text-shRed py-2 relative hover:after:content-[''] hover:after:absolute hover:after:left-0 hover:after:bottom-0 hover:after:h-1 hover:after:w-full hover:after:bg-shRed">Faith
+            Formation</a>
+          <ul
+            class="absolute hidden group-hover:block bg-white border border-gray-300 rounded-md shadow-lg whitespace-nowrap overflow-hidden">
+            <li><a href="./faith_formation.html#religious_education"
+              class="block px-4 py-2 hover:bg-shRed hover:text-white">Religious Education</a></li>
+            <li><a href="./faith_formation.html#adult_faith_formation"
+                class="block px-4 py-2 hover:bg-shRed hover:text-white">Adult Faith Formation</a></li>
+            <li><a href="./faith_formation.html#RCIA" class="block px-4 py-2 hover:bg-shRed hover:text-white">Rite Of
+                Christian Initiation -
+                RCIA</a></li>
+            
+            
+          </ul>
+        </li>
+        <li class="group relative"><a href="./ministries.html"
+            class="text-black hover:text-shRed py-2 relative hover:after:content-[''] hover:after:absolute hover:after:left-0 hover:after:bottom-0 hover:after:h-1 hover:after:w-full hover:after:bg-shRed">Ministries</a>
+          <ul
+            class="absolute hidden group-hover:block bg-white border border-gray-300 rounded-md shadow-lg whitespace-nowrap overflow-hidden">
+            <li><a href="./ministries.html#liturgical_ministries"
+                class="block px-4 py-2 hover:bg-shRed hover:text-white">Liturgical Ministries</a></li>
+            <li><a href="./ministries.html#parish_ministries"
+                class="block px-4 py-2 hover:bg-shRed hover:text-white">Parish Ministries</a></li>
+          </ul>
+        </li>
+        <li><a href="./youth_ministry.html"
+            class="text-black hover:text-shRed py-2 relative hover:after:content-[''] hover:after:absolute hover:after:left-0 hover:after:bottom-0 hover:after:h-1 hover:after:w-full hover:after:bg-shRed">Youth
+            Ministry</a></li>
+        <li class="group relative"> <a href="./contact.html"
+            class="text-black hover:text-shRed py-2 relative hover:after:content-[''] hover:after:absolute hover:after:left-0 hover:after:bottom-0 hover:after:h-1 hover:after:w-full hover:after:bg-shRed">Contact</a>
+          <ul
+            class="absolute hidden group-hover:block bg-white border border-gray-300 rounded-md shadow-lg whitespace-nowrap overflow-hidden">
+            <li><a href="./contact.html#contact_us" class="block px-4 py-2 hover:bg-shRed hover:text-white">Contact
+                Us</a></li>
+            <li><a href="./contact.html#register_as_parishioner"
+                class="block px-4 py-2 hover:bg-shRed hover:text-white">Register as a Parishioner</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="https://shcsjax.com/"
+            class="text-black hover:text-shRed py-2 relative hover:after:content-[''] hover:after:absolute hover:after:left-0 hover:after:bottom-0 hover:after:h-1 hover:after:w-full hover:after:bg-shRed">Sacred
+            Heart School</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- header -->
 
     <!-- Full-screen side menu -->
     <div id="side-menu"
-        class="fixed top-0 right-0 h-screen w-64 bg-white shadow-lg transform translate-x-full md:hidden transition duration-300 ease-in-out">
+        class="fixed top-0 right-0 h-screen w-64 bg-white shadow-lg transform translate-x-full md:hidden transition duration-300 ease-in-out z-10">
         <ul class="py-16 space-y-4">
             <li><a href="./home.html" class="block px-4 py-2 text-black hover:text-shRed">Home</a></li>
             <li><a href="./about.html" class="block px-4 py-2 text-black hover:text-shRed">About Us</a></li>
@@ -118,7 +116,7 @@
     <main>
         <section id="home" class="relative">
             <img src="../assets/red background main.JPG" class="w-full h-screen object-cover" alt="Church interior">
-            <div class="absolute inset-0 bg-black opacity-60"></div>
+            <div class="absolute inset-0 bg-black opacity-60 hover:opacity-30 transition duration-300"></div>
             <div class="absolute bottom-4 left-4">
                 <h1 class="text-3xl font-bold text-white whitespace-nowrap">
                     Welcome to
@@ -204,8 +202,7 @@
                 style="background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url('../assets/community_bg.jpeg'); pointer-events: none;">
             </div>
 
-            <div class="text-justify text-black font-bold text-lg p-6 relative"
-                style="font-family:'Playfair Display', serif;">
+            <div class="text-justify text-black font-bold text-lg p-6 relative">
                 <p class="text-2xl text-shRed font-bold pb-4">
                     Dear Sacred Heart Family and Friends,
                 </p>
